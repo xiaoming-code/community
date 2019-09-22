@@ -9,3 +9,9 @@
 ## 工具 git仓库
 [git主页](https://github.com/xiaoming-code/community)
 [git地址](https://github.com/xiaoming-code/community.git (https))
+
+##脚本
+```bash
+mvn flyway:migrate
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
+```
