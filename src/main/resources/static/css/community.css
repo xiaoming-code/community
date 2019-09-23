@@ -48,3 +48,20 @@ body
     color: #999;
     font-size: 13px;
 }
+
+.jumbotron
+{
+    color: white;
+    background-color: rgba(255,255,255,0);
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.jumbotron .btn-lg
+{
+    background-image: none;
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+}
+
+
