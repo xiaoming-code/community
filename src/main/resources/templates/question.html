@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/community.css">
     <script type="application/javascript" src="/js/jquery-3.4.1.min.js" ></script>
     <script type="application/javascript" src="/js/bootstrap.min.js" ></script>
+    <script type="application/javascript" src="/js/community.js" ></script>
+
 </head>
 <body>
 
@@ -27,7 +29,7 @@
 
             <hr >
 
-            <div class="col-lg-12 col-md-12 col-sm-12 col- xs-12" style="padding: 0px" th:text="${question.description}"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col- xs-12 decription"  style="padding:0px " th:text="${question.description}"></div>
 
             <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px">
                 <hr >
@@ -39,6 +41,49 @@
                 编辑
             </a>
 
+            <hr>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reply_body"  id="comment_section" >
+                <div class="media"  >
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-rounded"
+                                 th:src="${question.user.avatarUrl}" >
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading reply_media"  >
+                            <span  th:text="${question.user.name}"></span>
+                        </h5>
+                    </div>
+                </div>
+
+
+                <input type="hidden" id="question_id" th:value="${question.id}">
+                <textarea class="form-control comment" rows="8" id="comment_content"></textarea>
+
+                <button type="button" class="btn btn-success comment-btn" onclick="post()"> 回复 </button>
+
+            </div>
+<!--            <div class="media" id="comment_section" >-->
+<!--                <div class="media-left">-->
+<!--                    <a href="#">-->
+<!--                        <img class="media-object img-rounded"-->
+<!--                             th:src="${question.user.avatarUrl}" >-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="media-body">-->
+<!--                    <h5 class="media-heading" >-->
+<!--                        <span  th:text="${question.user.name}"></span>-->
+<!--                    </h5>-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+<!--            <input type="hidden" id="question_id" th:value="${question.id}">-->
+<!--            <textarea class="form-control comment" rows="8" id="comment_content"></textarea>-->
+
+<!--            <button type="button" class="btn btn-success comment-btn" onclick="post()"> 回复 </button>-->
 
         </div>
 
@@ -68,8 +113,6 @@
         </div>
     </div>
 </div>
-
-
-
 </body>
+
 </html>

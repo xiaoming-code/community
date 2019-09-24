@@ -26,6 +26,16 @@ body
     height: 38px;
 }
 
+.reply_media
+{
+    padding: 10px 5px;
+}
+
+.reply_body
+{
+    padding: 0px;
+}
+
 .text-desc
 {
     font-size: 12px;
@@ -64,4 +74,18 @@ body
     border-color: yellowgreen;
 }
 
+.comment
+{
+    margin: 5px 0px 20px 0px;
+}
 
+.comment-btn
+{
+    float: right;
+    margin-bottom: 10px;
+}
+
+.decription
+{
+    min-height: 100px;
+}
