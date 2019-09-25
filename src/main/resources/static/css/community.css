@@ -1,7 +1,7 @@
 body
 {
-    background-image: url("../img/bg2.jpg") ;
-    background-size: 100%;
+    background-image: url("../img/bg3.png") ;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -26,13 +26,14 @@ body
     height: 38px;
 }
 
-.reply_media
+.reply_input_name
 {
     padding: 10px 5px;
 }
 
 .reply_body
 {
+    margin-top: 10px;
     padding: 0px;
 }
 
@@ -89,3 +90,50 @@ body
 {
     min-height: 100px;
 }
+
+.originator
+{
+    padding: 10px;
+}
+
+.originator_name
+{
+    padding: 10px 0px;
+}
+
+.act_info
+{
+    color: #999;
+    margin-top: 7px;
+    font-size: 12px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.act_info .icon
+{
+    cursor: pointer;
+    width: 45px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.act_info .icon:hover
+{
+    color: white;
+    background-color: #b9def0;
+    border-color: #b9def0;
+}
+
+.comment_list
+{
+    border-bottom: 1px solid #ccc;
+}
+
+.comment_remind
+{
+    margin-top: 40px;
+}
+

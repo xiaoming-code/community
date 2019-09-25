@@ -59,7 +59,6 @@ public class AuthorizeController
             userService.createOrUpdate(user);
             response.addCookie(new Cookie("token",token));
             return "redirect:/";
-
         }
         else
         {
