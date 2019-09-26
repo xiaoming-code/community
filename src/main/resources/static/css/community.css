@@ -26,12 +26,12 @@ body
     height: 38px;
 }
 
-.reply_input_name
+.reply-input-name
 {
     padding: 10px 5px;
 }
 
-.reply_body
+.reply-body
 {
     margin-top: 10px;
     padding: 0px;
@@ -96,12 +96,12 @@ body
     padding: 10px;
 }
 
-.originator_name
+.originator-name
 {
     padding: 10px 0px;
 }
 
-.act_info
+.act-info
 {
     color: #999;
     margin-top: 7px;
@@ -110,7 +110,7 @@ body
     margin-bottom: 20px;
 }
 
-.act_info .icon
+.act-info .icon
 {
     cursor: pointer;
     width: 45px;
@@ -120,20 +120,55 @@ body
     margin-right: 5px;
 }
 
-.act_info .icon:hover
+.act-info .icon:hover
 {
     color: white;
-    background-color: #b9def0;
-    border-color: #b9def0;
+    background-color: #499ef3;
+    border-color: #499ef3;
 }
 
-.comment_list
+.act-info .active
+{
+    border-color: #499ef3;
+    background-color: #499ef3;
+    color: white;
+}
+
+.comment-list
 {
     border-bottom: 1px solid #ccc;
 }
 
-.comment_remind
+.comment-remind
 {
     margin-top: 40px;
 }
+
+.sub-comment
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+}
+
+.sub_list
+{
+    min-height: 70px;
+    padding: 5px;
+}
+
+.sub-comment-input
+{
+    margin-top: 13px;
+    min-height: 80px;
+}
+
+.sub-comment-button
+{
+    margin: 8px 0px;
+}
+
+
 
