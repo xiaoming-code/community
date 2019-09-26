@@ -73,18 +73,52 @@ function collapseComments(e)
     }
     else
     {
-        $.getJSON( "/comment/"+id, function( data ) {
-            console.log(data);
-            //请求数据成功，得到二级评论列表,拼凑标签
+        var subCommentContainer = $("#comment-"+id);
+        if (subCommentContainer.children().length == 1) {
+            $.getJSON("/comment/" + id, function (data) {
+                //请求数据成功，得到二级评论列表,拼凑标签
+                $.each(data.data, function (index, comment) {
+                    console.log(comment);
 
+                    var mediaLeftElement = $("<div/>",{
+                        "class":"media-left"
+                    }).append($("<img/>", {
+                        "class": "media-object img-rounded",
+                        "src": comment.user.avatarUrl
+                    }));
 
+                    var mediaBodyElement = $("<div/>",{
+                        "class":"media-body"
+                    }).append($("<h5/>", {
+                        "class": "media-heading",
+                        html: comment.user.name
+                    })).append($("<span/>", {
+                        "class": "sub_content",
+                        html: comment.content
+                    })).append($("<div/>", {
+                        "class": "act-info"
+                    }).append($("<span/>", {
+                        "class": "pull-right",
+                        html: moment(comment.gmtCreate).format('YYYY-MM-DD HH:mm')
+                    })));
 
-            //展开二级评论,添加展开状态
+                    var commentElement = $("<div/>", {
+                        "class": "media comment-list sub_list",
+                    }).append(mediaLeftElement).append(mediaBodyElement);
+
+                    subCommentContainer.prepend(commentElement);
+                });
+                //展开二级评论,添加展开状态
+                comments.addClass("in");
+                e.setAttribute("data-collapse", "in");
+                e.classList.add("active");
+            });
+
+        } else {
             comments.addClass("in");
-            e.setAttribute("data-collapse","in");
+            e.setAttribute("data-collapse", "in");
             e.classList.add("active");
-        });
-
+        }
 
 
     }
