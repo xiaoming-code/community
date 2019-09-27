@@ -211,6 +211,26 @@ body
     padding: 5px;
 }
 
+.notification-read
+{
+    color:#aab1bf;
+}
+
+.notification-read:hover
+{
+    text-decoration: none;
+}
+
+.notification-unread
+{
+    color: mediumblue;
+}
+
+.notification-unread:hover
+{
+    text-decoration: none;
+}
+
 
 
 

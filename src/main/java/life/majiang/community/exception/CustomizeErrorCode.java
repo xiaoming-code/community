@@ -8,7 +8,9 @@ public enum CustomizeErrorCode implements ICustomizeErrorCode
     SYS_ERROR(2004,"需要登录后才能进行评论,请先登录"),
     TYPE_PARAM_WRONG(2005,"评论类型错误或不存在"),
     COMMENT_NOT_FOUND(2006, "你所回复的评论不存在"),
-    CONTENT_IS_EMPTY(2007, "评论内容不能为空");
+    CONTENT_IS_EMPTY(2007, "评论内容不能为空"),
+    READ_NOTIFICATION_FAIL(2008, "不能读别人的信息啦！"),
+    NOTIFICATION_NOT_FOUND(2009, "消息不见啦!");
     private Integer code;
     private String message;
 
