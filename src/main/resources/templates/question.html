@@ -39,9 +39,18 @@
                 <hr >
             </span>
 
+
+            <div>
+                <span th:each="tag : ${question.tag.split(',')}">
+                    <span class="label label-info" th:text="' '+${tag}"> </span>
+                </span>
+
+            </div>
+
+            <hr>
+
             <a class="community-menu" th:href="@{'/publish/'+${question.id}}" th:if="${session.user != null && session.user.id == question.creator}">
-                <span class="glyphicon glyphicon-pencil" ></span>
-                编辑
+                <span class="glyphicon glyphicon-pencil" >编辑</span>
             </a>
 
             <hr>
@@ -132,12 +141,12 @@
 
         </div>
 
-        <!--右边问题发布人信息-->
+        <!--右边问题发布人信息以及相关问题-->
         <div class="col-lg-3 col-md-12 col-sm-12 col- xs-12"  >
             <div class="col-lg-12 col-md-12 col-sm-12 col- xs-12 originator">
                 <h3>发起人</h3>
 
-                <div class="media" >
+                <div class="media originator_message" >
                     <div class="media-left">
                         <a href="#">
                             <img class="media-object img-rounded"
@@ -149,13 +158,25 @@
                             <span  th:text="${question.user.name}"></span>
                         </h4>
                     </div>
-                    <hr>
+
+                    <hr class="originator_bottom">
+
                 </div>
 
             </div>
+
+
             <div class="col-lg-12 col-md-12 col-sm-12 col- xs-12">
-                <h3>相关问题</h3>
+                <h4>相关问题</h4>
+
+                <ul class="related-ul">
+                    <li th:each="related : ${relatedQuestions}" class="related-li">
+                        <a th:href="@{'/question/'+ ${related.id}}" th:text="${related.title}"></a>
+                    </li>
+                </ul>
+
             </div>
+
         </div>
     </div>
 </div>

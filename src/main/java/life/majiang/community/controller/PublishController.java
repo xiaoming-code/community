@@ -1,9 +1,11 @@
 package life.majiang.community.controller;
 
+import life.majiang.community.cache.TagCache;
 import life.majiang.community.dto.QuestionDTO;
 import life.majiang.community.model.Question;
 import life.majiang.community.model.User;
 import life.majiang.community.service.QuestionService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,14 +32,18 @@ public class PublishController
         model.addAttribute("description",question.getDescription());
         model.addAttribute("tag",question.getTag());
         model.addAttribute("id",question.getId());
+        model.addAttribute("tags", TagCache.get());
+
         return "publish";
     }
 
 
 
     @GetMapping("/publish")
-    public String publish()
+    public String publish(Model model)
+
     {
+        model.addAttribute("tags", TagCache.get());
         return "publish";
     }
 
@@ -53,6 +59,7 @@ public class PublishController
         model.addAttribute("title",title);
         model.addAttribute("description",description);
         model.addAttribute("tag",tag);
+        model.addAttribute("tags", TagCache.get());
 
         if(title ==null || title =="")
         {
@@ -72,6 +79,13 @@ public class PublishController
             return "publish";
         }
 
+        String invalid = TagCache.filterInvalid(tag);
+        if(StringUtils.isNoneBlank(invalid))
+        {
+            model.addAttribute("error","存在不支持的标签:"+invalid+",请重新输入!");
+            return "publish";
+        }
+
         User user = (User) request.getSession().getAttribute("user");
         if(user == null)
         {
@@ -83,6 +97,7 @@ public class PublishController
         question.setTitle(title);
         question.setDescription(description);
         question.setTag(tag);
+        question.setLikeCount(0);
         question.setCreator(user.getId());
         question.setId(id);
 

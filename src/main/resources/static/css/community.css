@@ -8,7 +8,7 @@ body
 .main
 {
     border-radius: 3px;
-    margin: 50px 100px 0px 100px;
+    margin: 50px 100px 30px 100px;
     background-color: rgba(255,255,255,0.85);
 }
 
@@ -169,6 +169,48 @@ body
 {
     margin: 8px 0px;
 }
+
+.related-ul
+{
+    padding-left: 5px;
+}
+
+.related-li
+{
+    list-style: none;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.originator_message
+{
+    margin: 30px 0px 0px 0px;
+}
+
+.originator_bottom
+{
+    margin-top: 35px;
+}
+
+.tag-tabs
+{
+    line-height: 35px;
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content
+{
+    min-height: 85px;
+    font-size: 120%;
+}
+
+.tags-modify
+{
+    min-height: 60px;
+    padding: 5px;
+}
+
 
 
 
