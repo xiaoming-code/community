@@ -21,6 +21,7 @@
             <hr>
 
 
+<!--            我的问题列表-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:if="${section == 'questions'}">
                 <div class="media" th:each="question : ${pagination.data}">
                     <div class="media-left">
@@ -45,13 +46,18 @@
 
             </div>
 
+            <!--我的消息-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:if="${section == 'replies'}">
                 <div class="media" th:each="notification : ${pagination.data}">
                     <div class="media-body">
                         <p>
-                            <a  th:class="${notification.status == 0}? 'media-heading notification-unread' : 'media-heading notification-read'"
-                                th:href="@{'/notification/'+ ${notification.id}}" th:text="${notification.notifierName+' '+notification.typeName+' '+notification.outerTitle}">
-
+                            <!--未读消息-->
+                            <a  th:if="${notification.status == 0}" class="media-heading notification-unread"
+                                th:href="@{'/notification/'+ ${notification.id}}" th:text="${notification.notifierName+' '+notification.typeName+' '+notification.outerTitle} + ' (未读)'">
+                            </a>
+                            <!--已读消息-->
+                            <a  th:if="${notification.status != 0}" class="media-heading notification-read"
+                                th:href="@{'/notification/'+ ${notification.id}}" th:text="${notification.notifierName+' '+notification.typeName+' '+notification.outerTitle} + ' (已读)'">
                             </a>
                         </p>
                     </div>
@@ -96,17 +102,19 @@
                     </ul>
                 </nav>
             </div>
-
         </div>
+
+
+        <!-- 右侧菜单 -->
         <div class="col-lg-3 col-md-12 col-sm-12 col- xs-12" >
             <div class="list-group section">
+
                 <a href="/profile/questions"  th:class="${section == 'questions'}? 'list-group-item active' : 'list-group-item'">我的问题</a>
                 <a href="/profile/replies"  th:class="${section == 'replies'}? 'list-group-item active' : 'list-group-item'">最新回复
-                    <span class="badge" th:text="${unreadCount}">14</span>
+                    <span class="badge" th:text="${session.unreadCount}"></span>
                 </a>
 
             </div>
-
         </div>
     </div>
 </div>

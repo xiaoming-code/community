@@ -46,11 +46,11 @@ public class CustomizeExceptionHandler
         {
             if(ex instanceof CustomizeException)
             {
-                model.addAttribute("message",CustomizeErrorCode.SYS_ERROR.getMessage() );
+                model.addAttribute("message",ex.getMessage() );
             }
             else
             {
-                model.addAttribute("message",ex.getMessage());
+                model.addAttribute("message",CustomizeErrorCode.SYS_ERROR);
             }
 
             return new ModelAndView("error");
