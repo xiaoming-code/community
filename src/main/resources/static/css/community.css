@@ -1,8 +1,14 @@
 body
 {
     background-image: url("../images/bg.jpg") ;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-size: 100%,100%;
+}
+
+.footer
+{
+    color: #666;
+    padding: 10px 25%;
+
 }
 
 .main
@@ -88,6 +94,7 @@ body
 
 .decription
 {
+    background-color: unset;
     min-height: 100px;
 }
 
@@ -231,6 +238,12 @@ body
     text-decoration: none;
 }
 
+.editormd-html-preview
+{
+    background-color: unset;
+}
 
-
-
+.editormd-html-preview
+{
+    background-color: unset;
+}
