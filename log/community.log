@@ -59,3 +59,61 @@ q2019-10-12 10:42:19.089  INFO 8100 --- [restartedMain] l.m.community.CommunityA
 2019-10-12 10:48:09.917 DEBUG 8100 --- [http-nio-8887-exec-10] l.m.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
 2019-10-12 10:48:09.918 DEBUG 8100 --- [http-nio-8887-exec-10] l.m.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 449(Long)
 2019-10-12 10:48:09.919 DEBUG 8100 --- [http-nio-8887-exec-10] l.m.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-12 10:56:07.841  INFO 8100 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 10:56:07.844  INFO 8100 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-12 10:56:07.911  INFO 8100 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-12 10:56:10.801  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 8100 (D:\community\target\classes started by cool in D:\community)
+2019-10-12 10:56:10.802  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-10-12 10:56:13.089  INFO 8100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-10-12 10:56:13.091  INFO 8100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-12 10:56:13.099  INFO 8100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-12 10:56:13.256  INFO 8100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-12 10:56:13.257  INFO 8100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2450 ms
+2019-10-12 10:56:13.789  INFO 8100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 10:56:13.865  INFO 8100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-12 10:56:14.309  INFO 8100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-12 10:56:14.363  INFO 8100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-10-12 10:56:14.364  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.634 seconds (JVM running for 841.673)
+2019-10-12 10:56:14.370  INFO 8100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-12 10:58:20.107  INFO 8100 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 10:58:25.177  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 8100 (D:\community\target\classes started by cool in D:\community)
+2019-10-12 10:58:25.178  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-10-12 10:58:28.054  INFO 8100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-10-12 10:58:28.057  INFO 8100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-12 10:58:28.058  INFO 8100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-12 10:58:28.247  INFO 8100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-12 10:58:28.248  INFO 8100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3064 ms
+2019-10-12 10:58:33.585  INFO 8100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 10:58:33.719  INFO 8100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-12 10:58:34.320  INFO 8100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-12 10:58:34.442  INFO 8100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-10-12 10:58:34.445  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 9.569 seconds (JVM running for 981.755)
+2019-10-12 10:58:34.451  INFO 8100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-12 10:59:03.405  INFO 8100 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 10:59:06.221  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 8100 (D:\community\target\classes started by cool in D:\community)
+2019-10-12 10:59:06.222  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-10-12 10:59:08.021  INFO 8100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-10-12 10:59:08.024  INFO 8100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-12 10:59:08.025  INFO 8100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-12 10:59:08.175  INFO 8100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-12 10:59:08.175  INFO 8100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1949 ms
+2019-10-12 10:59:08.658  INFO 8100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 10:59:08.713  INFO 8100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-12 10:59:09.073  INFO 8100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-12 10:59:09.117  INFO 8100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-10-12 10:59:09.118  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 2.965 seconds (JVM running for 1016.428)
+2019-10-12 10:59:09.121  INFO 8100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-12 11:00:35.334  INFO 8100 --- [Thread-34] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 11:00:38.453  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 8100 (D:\community\target\classes started by cool in D:\community)
+2019-10-12 11:00:38.454  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-10-12 11:00:39.535  INFO 8100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-10-12 11:00:39.537  INFO 8100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-12 11:00:39.537  INFO 8100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-12 11:00:39.639  INFO 8100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-12 11:00:39.639  INFO 8100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1180 ms
+2019-10-12 11:00:40.009  INFO 8100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 11:00:40.045  INFO 8100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-12 11:00:40.369  INFO 8100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-12 11:00:40.399  INFO 8100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-10-12 11:00:40.400  INFO 8100 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 2.021 seconds (JVM running for 1107.71)
+2019-10-12 11:00:40.403  INFO 8100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
