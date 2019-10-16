@@ -55,6 +55,12 @@
         </dependency>
 
         <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.16</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.4.199</version>
@@ -91,7 +97,6 @@
             <version>2.2.1</version>
         </dependency>
 
-
     </dependencies>
 
     <build>
@@ -106,11 +111,16 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>6.0.3</version>
                 <configuration>
-                    <url>jdbc:h2:~/community</url>
-                    <user>sa</user>
-                    <password>123</password>
+                    <url>jdbc:mysql://xiaoming.mysql.rds.aliyuncs.com:1001/xiaoming</url>
+                    <user>xiaoming</user>
+                    <password>1998xiaming!</password>
                 </configuration>
                 <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>8.0.16</version>
+                    </dependency>
                     <dependency>
                         <groupId>com.h2database</groupId>
                         <artifactId>h2</artifactId>
