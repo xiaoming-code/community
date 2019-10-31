@@ -111,13 +111,12 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>6.0.3</version>
                 <configuration>
-                    <url>jdbc:mysql://xiaoming.mysql.rds.aliyuncs.com:1001/xiaoming</url>
-                    <user>xiaoming</user>
-                    <password>1998xiaming!</password>
+                    <url>jdbc:h2:~/community</url>
+                    <user>sa</user>
+                    <password>123</password>
                 </configuration>
                 <dependencies>
                     <dependency>
-
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
                         <version>8.0.16</version>
