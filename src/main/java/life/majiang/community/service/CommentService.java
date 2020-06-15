@@ -45,6 +45,7 @@ public class CommentService
     {
         if(comment.getParentId() == null || comment.getParentId() ==0)
         {
+            //想要回复的问题/评论已被删除
             throw new CustomizeException(CustomizeErrorCode.TARGET_PARAM_NOT_FOUND);
         }
 
@@ -55,8 +56,11 @@ public class CommentService
 
         if(comment.getType() == CommentTypeEnum.COMMENT.getType())
         {
-            //回复评论
+            //二级回复
+            //回复已有评论
             Comment dbComment = commentMapper.selectByPrimaryKey(comment.getParentId());
+
+
             if(dbComment == null)
             {
                 throw new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
@@ -73,7 +77,7 @@ public class CommentService
             //增加评论数
             Comment parentComment = new Comment();
             parentComment.setId(comment.getParentId());
-            parentComment.setCommentCount(1);
+            //parentComment.setCommentCount(1);
             commentExtMapper.incCommentCount(parentComment);
             //创建通知
             createNotify(comment, dbComment.getCommentator(), commentator.getName(), question.getTitle(), NotificationTypeEnum.REPLY_COMMENT, question.getId());
@@ -88,7 +92,7 @@ public class CommentService
             }
             else
             {
-                question.setCommentCount(0);
+                //question.setCommentCount(0);
                 commentMapper.insert(comment);
                 questionExtMapper.incCommentCount(question);
                 //创建通知

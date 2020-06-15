@@ -24,8 +24,9 @@ public class SessionInterceptor implements HandlerInterceptor
     private NotificationService notificationService;
 
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
     {
+        System.out.println("过滤器pre方法处理中...");
         Cookie[] cookies = request.getCookies();
 
         if(cookies != null && cookies.length != 0)
@@ -48,6 +49,7 @@ public class SessionInterceptor implements HandlerInterceptor
                 }
             }
         }
+
         return true;
     }
 

@@ -56,6 +56,7 @@ public class PublishController
                         HttpServletRequest request,
                         Model model)
     {
+        //提交失败时，将数据返回，用于回显
         model.addAttribute("title",title);
         model.addAttribute("description",description);
         model.addAttribute("tag",tag);

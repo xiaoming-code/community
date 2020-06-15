@@ -22,6 +22,7 @@ public class FileController
     @RequestMapping("/file/upload")
     public FileDTO upload(HttpServletRequest request)
     {
+        System.out.println("后端文件上传接口...");
         MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
         MultipartFile file = multipartRequest.getFile("editormd-image-file");
 
@@ -35,10 +36,7 @@ public class FileController
             e.printStackTrace();
         }
 
-        FileDTO fileDTO = new FileDTO();
-        fileDTO.setSuccess(1);
-        fileDTO.setUrl("/images/bg1.jpg");
-        return fileDTO;
+        return null;
     }
 }
 

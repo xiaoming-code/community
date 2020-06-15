@@ -38,7 +38,8 @@ public class UCloudProvider
     private Integer expires;
 
 
-    public String upload(InputStream fileStream, String mineType, String fileName)
+    public String upload(InputStream fileStream
+            , String mineType, String fileName)
     {
         String generatedFileName;
         String[] filePaths = fileName.split("\\.");
@@ -48,7 +49,6 @@ public class UCloudProvider
         }else
         {
             throw new CustomizeException(CustomizeErrorCode.FILE_UPLOAD_FAIL);
-
         }
         try {
             ObjectAuthorization objectAuthorization = new UfileObjectLocalAuthorization(publicKey, privateKey);

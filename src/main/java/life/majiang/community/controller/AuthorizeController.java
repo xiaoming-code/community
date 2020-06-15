@@ -60,6 +60,8 @@ public class AuthorizeController
             user.setAvatarUrl(githubUser.getAvatarUrl());
             userService.createOrUpdate(user);
             response.addCookie(new Cookie("token",token));
+            String infoMsg = "user:"+githubUser.getName()+" login success!";
+            log.info(infoMsg);
             return "redirect:/";
         }
         else

@@ -1,36 +1,136 @@
-2019-10-21 09:01:21.052  INFO 10544 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 10544 (D:\community\target\classes started by cool in D:\community)
-2019-10-21 09:01:21.072  INFO 10544 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2019-10-21 09:01:21.712  INFO 10544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-21 09:01:21.712  INFO 10544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-21 09:01:24.542  INFO 10544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2019-10-21 09:01:24.592  INFO 10544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-21 09:01:24.592  INFO 10544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-10-21 09:01:24.841  INFO 10544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-21 09:01:24.841  INFO 10544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3119 ms
-2019-10-21 09:01:25.871  INFO 10544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-21 09:01:25.981  INFO 10544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-10-21 09:01:26.421  INFO 10544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-21 09:01:26.511  INFO 10544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2019-10-21 09:01:26.521  INFO 10544 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 6.855 seconds (JVM running for 12.869)
-2019-10-21 09:03:53.358  INFO 10544 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-21 09:03:53.359  INFO 10544 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-21 09:03:53.393  INFO 10544 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 33 ms
-2019-10-21 09:03:53.657  INFO 10544 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-21 09:03:54.131  INFO 10544 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-10-21 09:20:44.534  INFO 9652 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 9652 (D:\community\target\classes started by cool in D:\community)
-2019-10-21 09:20:44.554  INFO 9652 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2019-10-21 09:20:44.864  INFO 9652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-21 09:20:44.864  INFO 9652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-21 09:20:47.393  INFO 9652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2019-10-21 09:20:47.423  INFO 9652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-21 09:20:47.433  INFO 9652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-10-21 09:20:47.643  INFO 9652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-21 09:20:47.643  INFO 9652 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2779 ms
-2019-10-21 09:20:48.613  INFO 9652 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-21 09:20:48.693  INFO 9652 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-10-21 09:20:49.093  INFO 9652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-21 09:20:49.163  INFO 9652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2019-10-21 09:20:49.173  INFO 9652 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 5.789 seconds (JVM running for 10.454)
-2019-10-21 09:21:23.701  INFO 9652 --- [http-nio-8887-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-21 09:21:23.703  INFO 9652 --- [http-nio-8887-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-21 09:21:23.728  INFO 9652 --- [http-nio-8887-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2020-06-16 00:38:20.766  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 12816 (D:\community\target\classes started by cool in D:\community)
+2020-06-16 00:38:20.783  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-16 00:38:20.972  INFO 12816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-16 00:38:20.972  INFO 12816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-16 00:38:26.126  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-16 00:38:26.192  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-16 00:38:26.193  INFO 12816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-06-16 00:38:26.699  INFO 12816 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-16 00:38:26.700  INFO 12816 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5725 ms
+2020-06-16 00:38:28.934  INFO 12816 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:38:29.157  INFO 12816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-16 00:38:30.175  INFO 12816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-16 00:38:30.385  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-06-16 00:38:30.397  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 10.895 seconds (JVM running for 15.761)
+2020-06-16 00:46:52.198  INFO 12816 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 00:46:52.198  INFO 12816 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-16 00:46:52.220  INFO 12816 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-06-16 00:46:52.487  INFO 12816 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-16 00:46:53.168  INFO 12816 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-16 00:47:16.563  INFO 12816 --- [http-nio-8887-exec-2] l.m.c.controller.AuthorizeController     : user:xiaoming login success!
+2020-06-16 00:52:28.963  INFO 12816 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:52:28.968  INFO 12816 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-16 00:52:29.124  INFO 12816 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-16 00:52:31.831  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 12816 (D:\community\target\classes started by cool in D:\community)
+2020-06-16 00:52:31.831  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-16 00:52:32.936  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-16 00:52:32.939  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-16 00:52:32.940  INFO 12816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-06-16 00:52:33.111  INFO 12816 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-16 00:52:33.112  INFO 12816 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1276 ms
+2020-06-16 00:52:33.672  INFO 12816 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:52:33.715  INFO 12816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-16 00:52:34.070  INFO 12816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-16 00:52:34.112  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-06-16 00:52:34.115  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 2.352 seconds (JVM running for 859.48)
+2020-06-16 00:52:34.122  INFO 12816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-06-16 00:52:38.032  INFO 12816 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 00:52:38.034  INFO 12816 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-16 00:52:38.046  INFO 12816 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-06-16 00:52:38.064  INFO 12816 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-06-16 00:52:38.106  INFO 12816 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-06-16 00:52:46.353  INFO 12816 --- [Thread-32] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:52:46.355  INFO 12816 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-06-16 00:52:46.396  INFO 12816 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-06-16 00:52:49.791  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 12816 (D:\community\target\classes started by cool in D:\community)
+2020-06-16 00:52:49.792  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-16 00:52:53.062  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-16 00:52:53.066  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-16 00:52:53.067  INFO 12816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-06-16 00:52:53.254  INFO 12816 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-16 00:52:53.255  INFO 12816 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3457 ms
+2020-06-16 00:52:54.484  INFO 12816 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:52:54.559  INFO 12816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-16 00:52:55.066  INFO 12816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-16 00:52:55.134  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-06-16 00:52:55.135  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 5.429 seconds (JVM running for 880.5)
+2020-06-16 00:52:55.141  INFO 12816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-06-16 00:52:58.357  INFO 12816 --- [http-nio-8887-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 00:52:58.359  INFO 12816 --- [http-nio-8887-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-16 00:52:58.367  INFO 12816 --- [http-nio-8887-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-06-16 00:52:58.380  INFO 12816 --- [http-nio-8887-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-06-16 00:52:58.528  INFO 12816 --- [http-nio-8887-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-06-16 00:54:05.563  INFO 12816 --- [Thread-38] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:54:05.565  INFO 12816 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-06-16 00:54:05.610  INFO 12816 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-06-16 00:54:08.579  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 12816 (D:\community\target\classes started by cool in D:\community)
+2020-06-16 00:54:08.586  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-16 00:54:09.875  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-16 00:54:09.877  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-16 00:54:09.878  INFO 12816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-06-16 00:54:09.969  INFO 12816 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-16 00:54:09.970  INFO 12816 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1376 ms
+2020-06-16 00:54:10.466  INFO 12816 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:54:10.522  INFO 12816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-16 00:54:10.920  INFO 12816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-16 00:54:10.972  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-06-16 00:54:10.973  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 2.47 seconds (JVM running for 956.337)
+2020-06-16 00:54:10.977  INFO 12816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-06-16 00:55:06.299  INFO 12816 --- [Thread-45] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:55:08.825  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 12816 (D:\community\target\classes started by cool in D:\community)
+2020-06-16 00:55:08.826  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-16 00:55:10.013  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-16 00:55:10.015  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-16 00:55:10.016  INFO 12816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-06-16 00:55:10.121  INFO 12816 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-16 00:55:10.121  INFO 12816 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1290 ms
+2020-06-16 00:55:10.404  WARN 12816 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileController': Unsatisfied dependency expressed through field 'ucloudProvider'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'life.majiang.community.provider.UCloudProvider' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-06-16 00:55:10.405  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-16 00:55:10.425  INFO 12816 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-16 00:55:10.740 ERROR 12816 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field ucloudProvider in life.majiang.community.controller.FileController required a bean of type 'life.majiang.community.provider.UCloudProvider' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'life.majiang.community.provider.UCloudProvider' in your configuration.
+
+2020-06-16 00:56:56.975  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 12816 (D:\community\target\classes started by cool in D:\community)
+2020-06-16 00:56:56.975  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-16 00:56:58.020  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-16 00:56:58.022  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-16 00:56:58.022  INFO 12816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-06-16 00:56:58.102  INFO 12816 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-06-16 00:56:58.102  INFO 12816 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1123 ms
+2020-06-16 00:56:58.503  INFO 12816 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:56:58.555  INFO 12816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-16 00:56:58.905  INFO 12816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-16 00:56:58.938  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-06-16 00:56:58.939  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 2.037 seconds (JVM running for 1124.304)
+2020-06-16 00:56:58.944  INFO 12816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-06-16 00:57:01.955  INFO 12816 --- [Thread-51] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:57:04.987  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-ANHUM3C with PID 12816 (D:\community\target\classes started by cool in D:\community)
+2020-06-16 00:57:04.988  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-16 00:57:06.230  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-16 00:57:06.238  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-16 00:57:06.245  INFO 12816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-06-16 00:57:06.444  INFO 12816 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-06-16 00:57:06.448  INFO 12816 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1456 ms
+2020-06-16 00:57:06.806  INFO 12816 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:57:06.834  INFO 12816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-16 00:57:07.047  INFO 12816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-16 00:57:07.074  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-06-16 00:57:07.074  INFO 12816 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 2.169 seconds (JVM running for 1132.439)
+2020-06-16 00:57:07.077  INFO 12816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
